@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h1>My Projects</h1> 
+        <!-- Motivation Section -->
+        <div class="portfolio-item reverse">
+            <div class="text">
+                <h2>Motivation</h2>
+                <p>A lot of the current computer resource monitors are catered towards people who are more adept to their computers, giving them a lot of information that might not mean much to a more casual computer users. We aimed to make a program catering to a casual users, giving them the basic information about their computers resources.</p>
+            </div>
+            <div class="media">
+                <div class="slideshow-container" id="motivation-slideshow">
+                    <div class="slide active">
+                        <img src="CPUZ.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="speccy.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="afbr.jpg" alt="Slide 3">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1, 'motivation')">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1, 'motivation')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    
+            <!-- Online Study Section -->
+        <div class="portfolio-item reverse">
+            <div class="media">
+                <div class="slideshow-container" id="online-study-slideshow">
+                    <div class="slide active">
+                        <img src="bloatware1.png" alt="Online Study Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="bloatware2.png" alt="Online Study Slide 2">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1, 'online-study')">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1, 'online-study')">&#10095;</button>
+                </div>
+            </div>
+            <div class="text">
+                <h2>Online Study</h2>
+                <p>The online study involved [brief description]. The findings showed [key results].</p>
+            </div>
+        </div>
+
+        <!-- Prototyping Section -->
+        <div class="portfolio-item">
+            <div class="media">
+                <img src="online-study-image.jpg" alt="Online Study Image or GIF">
+            </div>
+            <div class="text">
+                <h2>Prototyping</h2>
+                <p>Prototyping paragraph.</p>
+            </div>
+        </div>
+        
+            
+        <!-- User Studies -->
+        <div class="portfolio-item reverse">
+            <div class="media">
+                <img src="online-study-image.jpg" alt="Online Study Image or GIF">
+            </div>
+            <div class="text">
+                <h2>User studies</h2>
+                <p>User studies Paragraph paragraph.</p>
+            </div>
+        </div>
+    </section>
+    
+    <h1>And after all of that we get...</h1>
+
+
+    <footer>
+        <p>&copy; 2024 Irving Garcia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

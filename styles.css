@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: url('background_picture.jpg'); /* Adjust the path to your file */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+/* Navigation Bar */
+header {
+    background-color: #000000; /* Nice blue color */
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #8e8e8f;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+/* Button Styling */
+a, button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2b2b2b; /* Green */
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover, button:hover {
+    background-color: #8e8e8f;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+
+
+/* Portfolio Section */
+
+#portfolio {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 2rem;
+}
+
+#portfolio h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Portfolio Item Layout */
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem; /* Space between text and media */
+    margin-bottom: 3rem;
+}
+
+.portfolio-item .text {
+    flex: 1;
+}
+
+.portfolio-item .media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item .media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reverse Layout */
+.portfolio-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Paragraph Styling */
+.portfolio-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 150%;
+    max-width: 400px; /* Adjust as needed */
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Slides */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Show the active slide */
+.slide.active {
+    display: block;
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
